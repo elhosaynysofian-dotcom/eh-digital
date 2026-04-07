@@ -1,51 +1,831 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>EH Digital</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0f172a;
-      color: white;
-      text-align: center;
-    }
-
-    .hero {
-      padding: 100px 20px;
-    }
-
-    h1 {
-      font-size: 40px;
-    }
-
-    p {
-      font-size: 18px;
-      color: #cbd5e1;
-    }
-
-    .btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 15px 30px;
-      background: #3b82f6;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EH Digital — Agence Web Premium pour Artisans, Commerces & PME</title>
+  <meta name="description" content="EH Digital crée des sites web modernes, rapides et orientés conversion pour artisans, commerces et PME. Audit gratuit." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-  <div class="hero">
-    <h1>🚀 Obtenez plus de clients grâce à votre site web</h1>
-    <p>EH Digital crée des sites modernes pour artisans et commerces</p>
-    <a href="#" class="btn">Demander un audit gratuit</a>
-  </div>
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">EH<span>Digital</span></a>
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li><a href="#hero" class="nav-link">Accueil</a></li>
+          <li class="has-dropdown">
+            <a href="#services" class="nav-link">Services <svg width="12" height="12" viewBox="0 0 12 12"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg></a>
+            <ul class="dropdown">
+              <li><a href="#services">Création de site vitrine</a></li>
+              <li><a href="#services">Refonte de site web</a></li>
+              <li><a href="#services">Optimisation conversion</a></li>
+              <li><a href="#services">SEO local</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <a href="#cibles" class="nav-link">Solutions <svg width="12" height="12" viewBox="0 0 12 12"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg></a>
+            <ul class="dropdown">
+              <li><a href="#cibles">Artisans</a></li>
+              <li><a href="#cibles">Commerces</a></li>
+              <li><a href="#cibles">PME</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <a href="#portfolio" class="nav-link">Réalisations <svg width="12" height="12" viewBox="0 0 12 12"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg></a>
+            <ul class="dropdown">
+              <li><a href="#portfolio">Sites vitrines</a></li>
+              <li><a href="#portfolio">Refontes</a></li>
+              <li><a href="#portfolio">Maquettes premium</a></li>
+            </ul>
+          </li>
+          <li><a href="#about" class="nav-link">À propos</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="#contact" class="btn-cta-nav">Audit gratuit</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
 
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-badge fade-up">
+          <span class="badge-dot"></span>
+          Agence web spécialisée PME &amp; Artisans
+        </div>
+        <h1 class="hero-title fade-up delay-1">
+          Votre site web doit<br />
+          <span class="gradient-text">vous rapporter des clients.</span><br />
+          Le nôtre y est fait pour ça.
+        </h1>
+        <p class="hero-sub fade-up delay-2">
+          EH Digital crée des sites modernes, rapides et orientés conversion pour les artisans, commerces et PME qui veulent une image pro et plus de demandes entrantes.
+        </p>
+        <div class="hero-ctas fade-up delay-3">
+          <a href="#contact" class="btn-primary">
+            Demander mon audit gratuit
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 9h12M9 3l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#portfolio" class="btn-ghost">Voir nos réalisations</a>
+        </div>
+        <div class="hero-social-proof fade-up delay-4">
+          <div class="avatars">
+            <span class="av av1">MB</span>
+            <span class="av av2">CL</span>
+            <span class="av av3">SR</span>
+          </div>
+          <p><strong>+47 entreprises</strong> nous font confiance</p>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+      <div class="hero-visual fade-in delay-2">
+        <div class="hero-mockup">
+          <div class="mockup-browser">
+            <div class="browser-bar">
+              <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+              <span class="browser-url">votre-entreprise.fr</span>
+            </div>
+            <div class="browser-content">
+              <div class="mock-hero-block">
+                <div class="mock-nav">
+                  <div class="mock-logo"></div>
+                  <div class="mock-nav-links">
+                    <div class="mock-line sm"></div>
+                    <div class="mock-line sm"></div>
+                    <div class="mock-line sm"></div>
+                    <div class="mock-btn-sm"></div>
+                  </div>
+                </div>
+                <div class="mock-headline">
+                  <div class="mock-line lg"></div>
+                  <div class="mock-line md"></div>
+                  <div class="mock-line sm short"></div>
+                </div>
+                <div class="mock-cta-row">
+                  <div class="mock-btn-cta"></div>
+                  <div class="mock-btn-outline"></div>
+                </div>
+                <div class="mock-visual-card"></div>
+              </div>
+            </div>
+          </div>
+          <div class="mockup-badge badge-speed">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="#3b82f6" stroke-width="2" stroke-linecap="round"/></svg>
+            <span>Score 98/100</span>
+          </div>
+          <div class="mockup-badge badge-mobile">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="7" y="2" width="10" height="20" rx="3" stroke="#10b981" stroke-width="2"/><circle cx="12" cy="17.5" r="1" fill="#10b981"/></svg>
+            <span>100% Mobile</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-marquee">
+      <div class="marquee-track">
+        <span>Artisans</span><span class="sep">◆</span>
+        <span>Plombiers</span><span class="sep">◆</span>
+        <span>Restaurants</span><span class="sep">◆</span>
+        <span>Électriciens</span><span class="sep">◆</span>
+        <span>Coiffeurs</span><span class="sep">◆</span>
+        <span>PME locales</span><span class="sep">◆</span>
+        <span>Architectes</span><span class="sep">◆</span>
+        <span>Commerces</span><span class="sep">◆</span>
+        <span>Consultants</span><span class="sep">◆</span>
+        <span>Artisans</span><span class="sep">◆</span>
+        <span>Plombiers</span><span class="sep">◆</span>
+        <span>Restaurants</span><span class="sep">◆</span>
+        <span>Électriciens</span><span class="sep">◆</span>
+        <span>Coiffeurs</span><span class="sep">◆</span>
+        <span>PME locales</span><span class="sep">◆</span>
+        <span>Architectes</span><span class="sep">◆</span>
+        <span>Commerces</span><span class="sep">◆</span>
+        <span>Consultants</span><span class="sep">◆</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STATS ===== -->
+  <section class="stats-band reveal">
+    <div class="container stats-grid">
+      <div class="stat-item">
+        <span class="stat-num" data-target="47">0</span><span class="stat-suffix">+</span>
+        <p>Projets livrés</p>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="98">0</span><span class="stat-suffix">%</span>
+        <p>Score performance moyen</p>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="3">0</span><span class="stat-suffix">x</span>
+        <p>Plus de demandes entrantes</p>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="14">0</span><span class="stat-suffix">j</span>
+        <p>Délai de livraison moyen</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROBLÈMES ===== -->
+  <section class="problems" id="problems">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Le constat</div>
+        <h2 class="section-title">Votre site actuel<br /><span class="gradient-text">vous coûte des clients.</span></h2>
+        <p class="section-sub">Chaque jour sans site performant, c'est un concurrent qui récupère vos prospects.</p>
+      </div>
+      <div class="problems-grid">
+        <div class="problem-card reveal">
+          <div class="problem-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#ef4444" stroke-width="1.5"/><path d="M12 8v5M12 16h.01" stroke="#ef4444" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Aucune présence en ligne</h3>
+          <p>Vos prospects cherchent sur Google — et ils trouvent vos concurrents. Pas vous.</p>
+        </div>
+        <div class="problem-card reveal delay-1">
+          <div class="problem-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M2 12C2 6.48 6.48 2 12 2s10 4.48 10 10" stroke="#ef4444" stroke-width="1.5" stroke-linecap="round"/><path d="M8 16s1 2 4 2 4-2 4-2" stroke="#ef4444" stroke-width="1.5" stroke-linecap="round"/><path d="M9 10h.01M15 10h.01" stroke="#ef4444" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Site vieillissant &amp; amateur</h3>
+          <p>Un site daté transmet une image peu fiable. Le visiteur repart en 8 secondes.</p>
+        </div>
+        <div class="problem-card reveal delay-2">
+          <div class="problem-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.68 19.79 19.79 0 012 1.13 2 2 0 014 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14h.01v2.92z" stroke="#ef4444" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><line x1="1" y1="1" x2="23" y2="23" stroke="#ef4444" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Zéro demande entrante</h3>
+          <p>Votre site reçoit des visites mais génère aucun appel, aucun email, aucun devis.</p>
+        </div>
+        <div class="problem-card reveal delay-3">
+          <div class="problem-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><rect x="5" y="2" width="14" height="20" rx="2" stroke="#ef4444" stroke-width="1.5"/><path d="M9 7h6M9 12h4" stroke="#ef4444" stroke-width="1.5" stroke-linecap="round"/><path d="M15 17l-3-3-3 3" stroke="#ef4444" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Non optimisé mobile</h3>
+          <p>70% des recherches locales sont sur smartphone. Un site non-responsive = clients perdus.</p>
+        </div>
+        <div class="problem-card reveal delay-1">
+          <div class="problem-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="8" stroke="#ef4444" stroke-width="1.5"/><path d="M21 21l-4.35-4.35" stroke="#ef4444" stroke-width="1.5" stroke-linecap="round"/><path d="M11 8v3M11 14h.01" stroke="#ef4444" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Invisible sur Google</h3>
+          <p>Sans SEO local, vous n'existez pas pour les recherches "plombier + votre ville".</p>
+        </div>
+        <div class="problem-card reveal delay-2">
+          <div class="problem-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5z" stroke="#ef4444" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5" stroke="#ef4444" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Image peu professionnelle</h3>
+          <p>Votre site reflète votre entreprise. Un mauvais design, c'est de la crédibilité en moins.</p>
+        </div>
+      </div>
+      <div class="problems-cta reveal">
+        <p>Vous vous reconnaissez dans l'un de ces problèmes ?</p>
+        <a href="#contact" class="btn-primary">Parlons-en gratuitement →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SOLUTION ===== -->
+  <section class="solution" id="solution">
+    <div class="solution-bg"></div>
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Notre approche</div>
+        <h2 class="section-title">EH Digital, votre partenaire<br /><span class="gradient-text">pour une présence qui convertit.</span></h2>
+        <p class="section-sub">On ne fait pas juste de beaux sites. On construit des outils commerciaux digitaux.</p>
+      </div>
+      <div class="solution-grid">
+        <div class="solution-card reveal">
+          <div class="sol-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="#3b82f6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h3>Design premium</h3>
+          <p>Chaque site est créé sur-mesure pour votre activité. Pas de template, pas de copier-coller. Une identité unique.</p>
+        </div>
+        <div class="solution-card reveal delay-1">
+          <div class="sol-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="#3b82f6" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+          <h3>Performance maximale</h3>
+          <p>Code optimisé, chargement ultra-rapide. Vos visiteurs ne fuient pas. Google vous remonte dans les résultats.</p>
+        </div>
+        <div class="solution-card reveal delay-2">
+          <div class="sol-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><rect x="5" y="2" width="14" height="20" rx="2" stroke="#3b82f6" stroke-width="1.8"/><path d="M9 8h6M9 12h6M9 16h4" stroke="#3b82f6" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+          <h3>100% mobile-first</h3>
+          <p>Impeccable sur tous les écrans. Votre site est pensé smartphone avant tout, car c'est là que sont vos clients.</p>
+        </div>
+        <div class="solution-card reveal delay-3">
+          <div class="sol-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M22 12h-4l-3 9L9 3l-3 9H2" stroke="#3b82f6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h3>Orienté conversion</h3>
+          <p>CTA visibles, tunnel de contact optimisé, structure pensée pour transformer un visiteur en client.</p>
+        </div>
+        <div class="solution-card reveal delay-1">
+          <div class="sol-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="8" stroke="#3b82f6" stroke-width="1.8"/><path d="M21 21l-4.35-4.35" stroke="#3b82f6" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+          <h3>SEO local intégré</h3>
+          <p>Balisage technique, mots-clés géolocalisés, Google Business — pour apparaître en premier dans votre zone.</p>
+        </div>
+        <div class="solution-card reveal delay-2">
+          <div class="sol-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke="#3b82f6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="7" r="4" stroke="#3b82f6" stroke-width="1.8"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="#3b82f6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h3>Accompagnement simple</h3>
+          <p>On s'occupe de tout, de A à Z. Vous n'avez besoin d'aucune connaissance technique.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Nos services</div>
+        <h2 class="section-title">Ce que nous créons<br /><span class="gradient-text">pour votre croissance.</span></h2>
+        <p class="section-sub">Des prestations pensées résultat, pas juste esthétique.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card featured reveal">
+          <div class="service-badge">Le plus demandé</div>
+          <div class="service-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none"><rect x="2" y="3" width="20" height="14" rx="2" stroke="#3b82f6" stroke-width="1.8"/><path d="M8 21h8M12 17v4" stroke="#3b82f6" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+          <h3>Création de site vitrine</h3>
+          <p>Un site professionnel sur-mesure qui présente votre entreprise, rassure vos visiteurs et génère des contacts qualifiés.</p>
+          <ul class="service-features">
+            <li>Design unique &amp; sur-mesure</li>
+            <li>Optimisé SEO local</li>
+            <li>Formulaire de contact intégré</li>
+            <li>Livré en 14 jours</li>
+          </ul>
+          <a href="#contact" class="service-link">En savoir plus →</a>
+        </div>
+        <div class="service-card reveal delay-1">
+          <div class="service-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" stroke="#3b82f6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h3>Refonte de site web</h3>
+          <p>Votre site actuel est vieillissant ? On le transforme en outil de vente moderne qui reflète enfin votre niveau.</p>
+          <ul class="service-features">
+            <li>Audit de l'existant</li>
+            <li>Nouveau design premium</li>
+            <li>Migration sans perte SEO</li>
+            <li>Performances boostées</li>
+          </ul>
+          <a href="#contact" class="service-link">En savoir plus →</a>
+        </div>
+        <div class="service-card reveal delay-2">
+          <div class="service-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M22 12h-4l-3 9L9 3l-3 9H2" stroke="#3b82f6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h3>Optimisation conversion</h3>
+          <p>Votre site reçoit des visites mais génère peu de contacts ? On restructure le parcours utilisateur pour convertir davantage.</p>
+          <ul class="service-features">
+            <li>Analyse comportementale</li>
+            <li>CTA &amp; tunnels optimisés</li>
+            <li>A/B testing</li>
+            <li>Rapport mensuel</li>
+          </ul>
+          <a href="#contact" class="service-link">En savoir plus →</a>
+        </div>
+        <div class="service-card reveal delay-1">
+          <div class="service-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="8" stroke="#3b82f6" stroke-width="1.8"/><path d="M21 21l-4.35-4.35" stroke="#3b82f6" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+          <h3>SEO local</h3>
+          <p>Apparaissez en tête des résultats Google dans votre zone géographique. Plus de visibilité = plus de clients.</p>
+          <ul class="service-features">
+            <li>Audit SEO complet</li>
+            <li>Mots-clés locaux ciblés</li>
+            <li>Google Business optimisé</li>
+            <li>Suivi mensuel</li>
+          </ul>
+          <a href="#contact" class="service-link">En savoir plus →</a>
+        </div>
+        <div class="service-card reveal delay-2">
+          <div class="service-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="#3b82f6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h3>Maintenance &amp; suivi</h3>
+          <p>On reste à vos côtés après la mise en ligne. Mises à jour, sécurité, ajouts de contenu — on gère tout.</p>
+          <ul class="service-features">
+            <li>Mises à jour régulières</li>
+            <li>Sauvegardes automatiques</li>
+            <li>Support prioritaire</li>
+            <li>Rapport mensuel</li>
+          </ul>
+          <a href="#contact" class="service-link">En savoir plus →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CIBLES ===== -->
+  <section class="cibles" id="cibles">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Nos solutions</div>
+        <h2 class="section-title">Conçu pour<br /><span class="gradient-text">votre secteur d'activité.</span></h2>
+        <p class="section-sub">Chaque métier a ses enjeux. Nos solutions sont adaptées à votre réalité terrain.</p>
+      </div>
+      <div class="cibles-tabs reveal">
+        <button class="tab-btn active" data-tab="artisans">Artisans</button>
+        <button class="tab-btn" data-tab="commerces">Commerces</button>
+        <button class="tab-btn" data-tab="pme">PME</button>
+      </div>
+      <div class="tab-panels">
+        <div class="tab-panel active" id="tab-artisans">
+          <div class="tab-content">
+            <div class="tab-text reveal">
+              <div class="section-tag">Artisans</div>
+              <h3>Votre expertise mérite une vitrine à la hauteur.</h3>
+              <p>Plombier, électricien, menuisier, peintre... Votre savoir-faire est réel. Mais sans site pro, vous perdez des chantiers chaque semaine face à des concurrents moins qualifiés mais mieux visibles.</p>
+              <ul class="tab-benefits">
+                <li><span class="benefit-check">✓</span> Site vitrine avec galerie de réalisations</li>
+                <li><span class="benefit-check">✓</span> Formulaire de devis en ligne</li>
+                <li><span class="benefit-check">✓</span> Optimisation Google "artisan + ville"</li>
+                <li><span class="benefit-check">✓</span> Avis clients mis en avant</li>
+                <li><span class="benefit-check">✓</span> Click-to-call mobile intégré</li>
+              </ul>
+              <a href="#contact" class="btn-primary">Devis artisan →</a>
+            </div>
+            <div class="tab-visual reveal delay-2">
+              <div class="tab-mockup">
+                <div class="tm-header"><div class="tm-logo">⚡ ÉlectroPro</div><div class="tm-nav"><div class="tmn-dot"></div><div class="tmn-dot"></div><div class="tmn-dot"></div></div></div>
+                <div class="tm-hero"><div class="tm-title"><div class="tmt-line"></div><div class="tmt-line short"></div></div><div class="tm-cta-row"><div class="tm-cta-btn"></div></div></div>
+                <div class="tm-gallery"><div class="tm-img"></div><div class="tm-img"></div><div class="tm-img"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-panel" id="tab-commerces">
+          <div class="tab-content">
+            <div class="tab-text reveal">
+              <div class="section-tag">Commerces</div>
+              <h3>Attirez plus de clients dans votre boutique.</h3>
+              <p>Restaurant, salon, boutique, service local... Un site professionnel renforcé par le référencement local, c'est la visibilité qui manquait à votre commerce pour attirer de nouveaux clients chaque semaine.</p>
+              <ul class="tab-benefits">
+                <li><span class="benefit-check">✓</span> Présentation des produits &amp; services</li>
+                <li><span class="benefit-check">✓</span> Intégration horaires &amp; localisation</li>
+                <li><span class="benefit-check">✓</span> Google Maps intégré</li>
+                <li><span class="benefit-check">✓</span> Galerie photos premium</li>
+                <li><span class="benefit-check">✓</span> Réservation ou prise de rendez-vous</li>
+              </ul>
+              <a href="#contact" class="btn-primary">Devis commerce →</a>
+            </div>
+            <div class="tab-visual reveal delay-2">
+              <div class="tab-mockup">
+                <div class="tm-header"><div class="tm-logo">🌿 Saveurs</div><div class="tm-nav"><div class="tmn-dot"></div><div class="tmn-dot"></div><div class="tmn-dot"></div></div></div>
+                <div class="tm-hero green"><div class="tm-title"><div class="tmt-line"></div><div class="tmt-line short"></div></div><div class="tm-cta-row"><div class="tm-cta-btn green-btn"></div></div></div>
+                <div class="tm-gallery"><div class="tm-img tall"></div><div class="tm-img-col"><div class="tm-img sm"></div><div class="tm-img sm"></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-panel" id="tab-pme">
+          <div class="tab-content">
+            <div class="tab-text reveal">
+              <div class="section-tag">PME</div>
+              <h3>Un site à la hauteur de votre structure.</h3>
+              <p>Votre PME a besoin d'un site qui reflète votre professionnalisme, génère des leads B2B qualifiés, et rassure vos partenaires et prospects dès le premier regard.</p>
+              <ul class="tab-benefits">
+                <li><span class="benefit-check">✓</span> Design corporate premium</li>
+                <li><span class="benefit-check">✓</span> Pages services détaillées</li>
+                <li><span class="benefit-check">✓</span> Section équipe &amp; références clients</li>
+                <li><span class="benefit-check">✓</span> Formulaire de contact B2B</li>
+                <li><span class="benefit-check">✓</span> Tunnel de qualification intégré</li>
+              </ul>
+              <a href="#contact" class="btn-primary">Devis PME →</a>
+            </div>
+            <div class="tab-visual reveal delay-2">
+              <div class="tab-mockup">
+                <div class="tm-header"><div class="tm-logo">◆ Nexora</div><div class="tm-nav"><div class="tmn-dot"></div><div class="tmn-dot"></div><div class="tmn-dot"></div></div></div>
+                <div class="tm-hero purple"><div class="tm-title"><div class="tmt-line"></div><div class="tmt-line short"></div></div><div class="tm-cta-row"><div class="tm-cta-btn purple-btn"></div></div></div>
+                <div class="tm-cards"><div class="tm-card"></div><div class="tm-card"></div><div class="tm-card"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PORTFOLIO ===== -->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Réalisations</div>
+        <h2 class="section-title">Des projets réels,<br /><span class="gradient-text">des résultats mesurables.</span></h2>
+        <p class="section-sub">Chaque site est une opportunité de prouver notre engagement qualité.</p>
+      </div>
+      <div class="portfolio-filter reveal">
+        <button class="filter-btn active" data-filter="all">Tous</button>
+        <button class="filter-btn" data-filter="vitrine">Sites vitrines</button>
+        <button class="filter-btn" data-filter="refonte">Refontes</button>
+        <button class="filter-btn" data-filter="premium">Premium</button>
+      </div>
+      <div class="portfolio-grid">
+        <div class="portfolio-card reveal" data-cat="vitrine">
+          <div class="portfolio-img" style="background:linear-gradient(135deg,#1a1a2e,#16213e,#0f3460)">
+            <div class="portfolio-mockup-mini"><div class="pmm-bar"></div><div class="pmm-content"><div class="pmm-hero orange"></div><div class="pmm-lines"><div class="pmm-line"></div><div class="pmm-line short"></div></div></div></div>
+          </div>
+          <div class="portfolio-info">
+            <div class="portfolio-tag">Site vitrine</div>
+            <h3>Maison Delacroix</h3>
+            <p>Restaurant gastronomique — Design épuré, réservation intégrée, galerie immersive</p>
+            <div class="portfolio-stats"><span>+180% réservations</span><span>·</span><span>Score 99/100</span></div>
+            <a href="#contact" class="portfolio-link">Découvrir →</a>
+          </div>
+        </div>
+        <div class="portfolio-card reveal delay-1" data-cat="refonte">
+          <div class="portfolio-img" style="background:linear-gradient(135deg,#0d2137,#1a4a72,#0e7490)">
+            <div class="portfolio-mockup-mini"><div class="pmm-bar"></div><div class="pmm-content"><div class="pmm-hero blue"></div><div class="pmm-lines"><div class="pmm-line"></div><div class="pmm-line short"></div></div></div></div>
+          </div>
+          <div class="portfolio-info">
+            <div class="portfolio-tag">Refonte</div>
+            <h3>Plomberie Martin</h3>
+            <p>Artisan plombier — Refonte complète, tunnel de devis, SEO local boosté</p>
+            <div class="portfolio-stats"><span>+220% appels</span><span>·</span><span>#1 Google local</span></div>
+            <a href="#contact" class="portfolio-link">Découvrir →</a>
+          </div>
+        </div>
+        <div class="portfolio-card reveal delay-2" data-cat="premium">
+          <div class="portfolio-img" style="background:linear-gradient(135deg,#1a0533,#3b0764,#6d28d9)">
+            <div class="portfolio-mockup-mini"><div class="pmm-bar"></div><div class="pmm-content"><div class="pmm-hero purple"></div><div class="pmm-lines"><div class="pmm-line"></div><div class="pmm-line short"></div></div></div></div>
+          </div>
+          <div class="portfolio-info">
+            <div class="portfolio-tag">Premium</div>
+            <h3>Studio Alix — Coiffure</h3>
+            <p>Salon haut de gamme — Prise de RDV, galerie avant/après, avis certifiés</p>
+            <div class="portfolio-stats"><span>+95 nouveaux clients/mois</span><span>·</span><span>4.9★ Google</span></div>
+            <a href="#contact" class="portfolio-link">Découvrir →</a>
+          </div>
+        </div>
+        <div class="portfolio-card reveal" data-cat="vitrine">
+          <div class="portfolio-img" style="background:linear-gradient(135deg,#052e16,#166534,#15803d)">
+            <div class="portfolio-mockup-mini"><div class="pmm-bar"></div><div class="pmm-content"><div class="pmm-hero green"></div><div class="pmm-lines"><div class="pmm-line"></div><div class="pmm-line short"></div></div></div></div>
+          </div>
+          <div class="portfolio-info">
+            <div class="portfolio-tag">Site vitrine</div>
+            <h3>Menuiserie Ferrand</h3>
+            <p>Artisan menuisier — Galerie chantiers, formulaire devis, Google My Business</p>
+            <div class="portfolio-stats"><span>+3 chantiers/mois</span><span>·</span><span>14j livré</span></div>
+            <a href="#contact" class="portfolio-link">Découvrir →</a>
+          </div>
+        </div>
+        <div class="portfolio-card reveal delay-1" data-cat="refonte">
+          <div class="portfolio-img" style="background:linear-gradient(135deg,#1c0513,#831843,#be185d)">
+            <div class="portfolio-mockup-mini"><div class="pmm-bar"></div><div class="pmm-content"><div class="pmm-hero pink"></div><div class="pmm-lines"><div class="pmm-line"></div><div class="pmm-line short"></div></div></div></div>
+          </div>
+          <div class="portfolio-info">
+            <div class="portfolio-tag">Refonte</div>
+            <h3>Cabinet Renaud Conseil</h3>
+            <p>PME services — Design corporate, téléchargements documents, génération leads B2B</p>
+            <div class="portfolio-stats"><span>+40 leads/mois</span><span>·</span><span>Taux conv. ×2.8</span></div>
+            <a href="#contact" class="portfolio-link">Découvrir →</a>
+          </div>
+        </div>
+        <div class="portfolio-card reveal delay-2" data-cat="premium">
+          <div class="portfolio-img" style="background:linear-gradient(135deg,#1c1200,#78350f,#d97706)">
+            <div class="portfolio-mockup-mini"><div class="pmm-bar"></div><div class="pmm-content"><div class="pmm-hero amber"></div><div class="pmm-lines"><div class="pmm-line"></div><div class="pmm-line short"></div></div></div></div>
+          </div>
+          <div class="portfolio-info">
+            <div class="portfolio-tag">Premium</div>
+            <h3>Domaine Vignes d'Or</h3>
+            <p>Domaine viticole — E-commerce vin, storytelling visuel, expérience immersive</p>
+            <div class="portfolio-stats"><span>+310% ventes en ligne</span><span>·</span><span>UX premium</span></div>
+            <a href="#contact" class="portfolio-link">Découvrir →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== AVANT/APRÈS ===== -->
+  <section class="avant-apres" id="avant-apres">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Avant / Après</div>
+        <h2 class="section-title">La différence est<br /><span class="gradient-text">immédiate et mesurable.</span></h2>
+        <p class="section-sub">Voici ce que votre site pourrait devenir après une refonte EH Digital.</p>
+      </div>
+      <div class="aa-wrapper reveal">
+        <div class="aa-card avant">
+          <div class="aa-label">Avant</div>
+          <div class="aa-mockup old">
+            <div class="old-header"><div class="old-logo">SOCIÉTÉ DUPONT</div><div class="old-menu">Accueil | Services | Contact</div></div>
+            <div class="old-hero"><div class="old-title">Bienvenue sur notre site</div><div class="old-sub">Nous proposons des services de qualité depuis 2003.</div></div>
+            <div class="old-content"><div class="old-col"><div class="old-line"></div><div class="old-line"></div><div class="old-line short"></div></div><div class="old-img"></div></div>
+          </div>
+          <div class="aa-stats-row bad">
+            <div class="aa-stat"><span class="bad">3/10</span> Design</div>
+            <div class="aa-stat"><span class="bad">42/100</span> Perf.</div>
+            <div class="aa-stat"><span class="bad">0.8%</span> Conv.</div>
+          </div>
+        </div>
+        <div class="aa-arrow">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><path d="M10 24h28M28 14l10 10-10 10" stroke="#3b82f6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="aa-card apres">
+          <div class="aa-label good">Après EH Digital</div>
+          <div class="aa-mockup new">
+            <div class="new-header"><div class="new-logo">Dupont<span>Pro</span></div><div class="new-cta">Devis gratuit</div></div>
+            <div class="new-hero"><div class="new-title"><div class="ntl"></div><div class="ntl short"></div></div><div class="new-btn"></div></div>
+            <div class="new-cards"><div class="new-card"></div><div class="new-card"></div><div class="new-card"></div></div>
+          </div>
+          <div class="aa-stats-row good">
+            <div class="aa-stat"><span class="good">10/10</span> Design</div>
+            <div class="aa-stat"><span class="good">98/100</span> Perf.</div>
+            <div class="aa-stat"><span class="good">4.2%</span> Conv.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MÉTHODE ===== -->
+  <section class="methode" id="methode">
+    <div class="methode-bg"></div>
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Notre process</div>
+        <h2 class="section-title">De l'idée à la mise en ligne<br /><span class="gradient-text">en 4 étapes simples.</span></h2>
+        <p class="section-sub">Un process transparent, fluide, sans surprise. Vous restez maître du projet à chaque étape.</p>
+      </div>
+      <div class="steps-grid">
+        <div class="step-card reveal">
+          <div class="step-number">01</div>
+          <div class="step-content"><h3>Échange &amp; audit</h3><p>On analyse votre situation actuelle, vos objectifs et votre marché local. 30 minutes suffisent pour cadrer le projet.</p></div>
+          <div class="step-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" stroke="#3b82f6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        </div>
+        <div class="step-connector reveal delay-1"><div class="conn-line"></div></div>
+        <div class="step-card reveal delay-1">
+          <div class="step-number">02</div>
+          <div class="step-content"><h3>Maquette &amp; validation</h3><p>On crée une maquette visuelle complète. Vous validez le design avant que le développement ne commence. Zéro mauvaise surprise.</p></div>
+          <div class="step-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="2" stroke="#3b82f6" stroke-width="1.8"/><path d="M3 9h18M9 21V9" stroke="#3b82f6" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+        </div>
+        <div class="step-connector reveal delay-2"><div class="conn-line"></div></div>
+        <div class="step-card reveal delay-2">
+          <div class="step-number">03</div>
+          <div class="step-content"><h3>Développement</h3><p>Notre équipe code votre site avec soin. Mobile-first, performances optimisées, SEO intégré dès le départ. 10 à 14 jours.</p></div>
+          <div class="step-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"><polyline points="16 18 22 12 16 6" stroke="#3b82f6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><polyline points="8 6 2 12 8 18" stroke="#3b82f6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        </div>
+        <div class="step-connector reveal delay-3"><div class="conn-line"></div></div>
+        <div class="step-card reveal delay-3">
+          <div class="step-number">04</div>
+          <div class="step-content"><h3>Mise en ligne</h3><p>Votre site est en ligne, hébergé, sécurisé. On vous forme à l'utilisation basique. Et on reste disponibles.</p></div>
+          <div class="step-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="#3b82f6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><polyline points="22 4 12 14.01 9 11.01" stroke="#3b82f6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TÉMOIGNAGES ===== -->
+  <section class="temoignages" id="temoignages">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Témoignages</div>
+        <h2 class="section-title">Ce que disent<br /><span class="gradient-text">nos clients.</span></h2>
+        <p class="section-sub">Des résultats concrets, des clients satisfaits. Voici ce qu'ils en pensent.</p>
+      </div>
+      <div class="temoignages-grid">
+        <div class="temoignage-card featured reveal">
+          <div class="temo-stars">★★★★★</div>
+          <blockquote>"Avant EH Digital, mon site était honteux. Maintenant je reçois 4 à 6 demandes de devis par semaine directement depuis le site. L'investissement est rentabilisé en un mois."</blockquote>
+          <div class="temo-author"><div class="temo-avatar">JM</div><div><strong>Jean-Marc Perrier</strong><span>Électricien, Lyon</span></div></div>
+        </div>
+        <div class="temoignage-card reveal delay-1">
+          <div class="temo-stars">★★★★★</div>
+          <blockquote>"Livré en 12 jours, exactement comme promis. Le design est vraiment haut de gamme et mes clients me félicitent pour l'image de ma boutique. Bravo à toute l'équipe."</blockquote>
+          <div class="temo-author"><div class="temo-avatar">SB</div><div><strong>Sophie Bernard</strong><span>Gérante, salon de beauté Montpellier</span></div></div>
+        </div>
+        <div class="temoignage-card reveal delay-2">
+          <div class="temo-stars">★★★★★</div>
+          <blockquote>"Notre PME avait besoin d'un vrai site corporate pour rassurer nos partenaires B2B. EH Digital a compris notre ADN et l'a retranscrit parfaitement. On a signé 2 contrats grâce au site."</blockquote>
+          <div class="temo-author"><div class="temo-avatar">TR</div><div><strong>Thomas Renault</strong><span>Directeur, Renault Consulting SAS</span></div></div>
+        </div>
+        <div class="temoignage-card reveal delay-1">
+          <div class="temo-stars">★★★★★</div>
+          <blockquote>"Mon site plomberie était vieux de 10 ans. EH Digital l'a refait en 2 semaines, et dès le premier mois j'étais en première page Google. Franchement impressionnant."</blockquote>
+          <div class="temo-author"><div class="temo-avatar">PD</div><div><strong>Philippe Dubois</strong><span>Plombier-chauffagiste, Bordeaux</span></div></div>
+        </div>
+        <div class="temoignage-card reveal delay-2">
+          <div class="temo-stars">★★★★★</div>
+          <blockquote>"Équipe ultra réactive, design au-delà de mes attentes, et surtout les résultats sont là. Mon restaurant affiche complet le week-end depuis la mise en ligne."</blockquote>
+          <div class="temo-author"><div class="temo-avatar">ML</div><div><strong>Marie-Laure Fontaine</strong><span>Restauratrice, Marseille</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="faq" id="faq">
+    <div class="container faq-container">
+      <div class="section-header reveal">
+        <div class="section-tag">FAQ</div>
+        <h2 class="section-title">Vos questions,<br /><span class="gradient-text">nos réponses claires.</span></h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item reveal">
+          <button class="faq-q"><span>Combien coûte un site web ?</span><svg class="faq-arrow" width="20" height="20" viewBox="0 0 20 20"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round"/></svg></button>
+          <div class="faq-a"><p>Nos sites vitrines démarrent à partir de 890€. Le prix dépend du nombre de pages, des fonctionnalités et du niveau de personnalisation. On vous propose toujours un devis gratuit et sans engagement après un échange de 30 minutes.</p></div>
+        </div>
+        <div class="faq-item reveal delay-1">
+          <button class="faq-q"><span>En combien de temps sera-t-il en ligne ?</span><svg class="faq-arrow" width="20" height="20" viewBox="0 0 20 20"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round"/></svg></button>
+          <div class="faq-a"><p>Notre délai moyen est de 14 jours. Cela inclut la maquette, le développement, vos retours et la mise en ligne. Pour les projets plus complexes (e-commerce, multipage), comptez 3 à 5 semaines.</p></div>
+        </div>
+        <div class="faq-item reveal delay-2">
+          <button class="faq-q"><span>Puis-je modifier mon site moi-même ?</span><svg class="faq-arrow" width="20" height="20" viewBox="0 0 20 20"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round"/></svg></button>
+          <div class="faq-a"><p>Oui, si vous le souhaitez. On peut intégrer un CMS simple pour vous permettre de modifier les textes, photos et certains blocs. Sinon, on s'occupe des mises à jour pour vous dans le cadre d'un contrat de maintenance.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q"><span>Le site sera-t-il adapté au mobile ?</span><svg class="faq-arrow" width="20" height="20" viewBox="0 0 20 20"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round"/></svg></button>
+          <div class="faq-a"><p>Absolument. Tous nos sites sont développés en "mobile-first". On conçoit d'abord pour smartphone, puis on adapte pour tablette et desktop. Le résultat est impeccable sur tous les écrans.</p></div>
+        </div>
+        <div class="faq-item reveal delay-1">
+          <button class="faq-q"><span>Proposez-vous l'hébergement ?</span><svg class="faq-arrow" width="20" height="20" viewBox="0 0 20 20"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round"/></svg></button>
+          <div class="faq-a"><p>Oui, on prend en charge l'hébergement, le nom de domaine et le certificat SSL. Tout est inclus dans notre offre de maintenance. Vous n'avez rien à gérer techniquement.</p></div>
+        </div>
+        <div class="faq-item reveal delay-2">
+          <button class="faq-q"><span>Peut-on refaire un site existant ?</span><svg class="faq-arrow" width="20" height="20" viewBox="0 0 20 20"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round"/></svg></button>
+          <div class="faq-a"><p>Bien sûr, c'est même l'une de nos spécialités. On analyse votre site actuel, on identifie ce qui freine votre visibilité et vos conversions, puis on repart sur une base solide tout en préservant votre référencement existant.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA FINALE / CONTACT ===== -->
+  <section class="cta-finale" id="contact">
+    <div class="cta-bg"></div>
+    <div class="cta-orb"></div>
+    <div class="container">
+      <div class="cta-content reveal">
+        <div class="section-tag">Passez à l'action</div>
+        <h2 class="cta-title">Prêt à transformer<br /><span class="gradient-text">votre présence digitale ?</span></h2>
+        <p class="cta-sub">30 minutes d'échange gratuit. On analyse votre situation et on vous propose une stratégie adaptée, sans engagement et sans jargon inutile.</p>
+      </div>
+      <div class="cta-form-zone reveal">
+        <div class="cta-form-card">
+          <h3>Audit gratuit — 30 min.</h3>
+          <p>Dites-nous en quelques mots où vous en êtes.</p>
+          <div class="form-row">
+            <input type="text" placeholder="Votre prénom &amp; nom" class="form-input" />
+            <input type="text" placeholder="Votre activité" class="form-input" />
+          </div>
+          <input type="email" placeholder="Votre adresse email" class="form-input full" />
+          <input type="tel" placeholder="Votre numéro de téléphone" class="form-input full" />
+          <textarea placeholder="Parlez-nous de votre projet ou de vos problèmes actuels..." class="form-textarea" rows="4"></textarea>
+          <button class="btn-submit" onclick="alert('Merci ! Nous vous recontacterons sous 24h.')">
+            Envoyer ma demande d'audit
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 9h12M9 3l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <p class="form-note">✓ Gratuit &nbsp;·&nbsp; ✓ Sans engagement &nbsp;·&nbsp; ✓ Réponse sous 24h</p>
+        </div>
+        <div class="cta-reassurance">
+          <div class="reass-item">
+            <div class="reass-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M22 12h-4l-3 9L9 3l-3 9H2" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div><strong>Audit rapide</strong><p>On analyse votre site et votre marché local en 30 minutes.</p></div>
+          </div>
+          <div class="reass-item">
+            <div class="reass-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div><strong>Devis clair</strong><p>Un prix fixe, transparent, sans mauvaise surprise.</p></div>
+          </div>
+          <div class="reass-item">
+            <div class="reass-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><polyline points="22 4 12 14.01 9 11.01" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div><strong>Résultats garantis</strong><p>Site livré dans les délais convenus ou remboursé.</p></div>
+          </div>
+          <div class="reass-item">
+            <div class="reass-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="7" r="4" stroke="#3b82f6" stroke-width="2"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div><strong>47+ clients satisfaits</strong><p>Des artisans, commerces et PME qui nous font confiance.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <div class="section-tag">À propos</div>
+          <h2 class="section-title">EH Digital, l'agence qui parle<br /><span class="gradient-text">le langage des entrepreneurs.</span></h2>
+          <p>On n'est pas des théoriciens du web. On est des praticiens du résultat. Chaque site qu'on crée a un seul objectif : générer plus de clients pour votre activité.</p>
+          <p>Notre équipe maîtrise le design, le développement, le SEO et la conversion. On combine ces expertises pour créer des sites qui font véritablement la différence sur votre marché local.</p>
+          <div class="about-values">
+            <div class="value-item"><span>→</span> Transparence totale</div>
+            <div class="value-item"><span>→</span> Résultats avant tout</div>
+            <div class="value-item"><span>→</span> Support réactif</div>
+            <div class="value-item"><span>→</span> Délais respectés</div>
+          </div>
+        </div>
+        <div class="about-visual reveal delay-2">
+          <div class="about-card">
+            <div class="about-card-inner">
+              <div class="ac-stat"><span class="ac-num">47+</span><span class="ac-label">projets livrés</span></div>
+              <div class="ac-stat"><span class="ac-num">14j</span><span class="ac-label">délai moyen</span></div>
+              <div class="ac-stat"><span class="ac-num">4.9★</span><span class="ac-label">note moyenne</span></div>
+              <div class="ac-stat"><span class="ac-num">3×</span><span class="ac-label">plus de contacts</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="nav-logo footer-logo">EH<span>Digital</span></a>
+          <p>Agence web premium pour artisans, commerces et PME. On crée des sites qui génèrent de vrais résultats commerciaux.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
+            <a href="#" class="social-link" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            <a href="#" class="social-link" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Création de site vitrine</a></li>
+            <li><a href="#services">Refonte de site web</a></li>
+            <li><a href="#services">Optimisation conversion</a></li>
+            <li><a href="#services">SEO local</a></li>
+            <li><a href="#services">Maintenance</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Solutions</h4>
+          <ul>
+            <li><a href="#cibles">Artisans</a></li>
+            <li><a href="#cibles">Commerces</a></li>
+            <li><a href="#cibles">PME</a></li>
+            <li><a href="#portfolio">Réalisations</a></li>
+            <li><a href="#methode">Notre méthode</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:contact@eh-digital.fr">contact@eh-digital.fr</a></li>
+            <li><a href="tel:+33600000000">+33 6 00 00 00 00</a></li>
+            <li><a href="#contact">Audit gratuit</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 EH Digital. Tous droits réservés.</p>
+        <div class="footer-links">
+          <a href="#">Mentions légales</a>
+          <a href="#">Politique de confidentialité</a>
+          <a href="#">CGV</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
